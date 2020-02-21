@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1581917406 source:d:\mycppworkspace\mytemplete\binarytreetraversal\main.cpp
+	<iostream>
+	"BinaryTree.h"
+
+1581917352 source:d:\mycppworkspace\mytemplete\binarytreetraversal\binarytree.cpp
+	"BinaryTree.h"
+	<stack>
+	<queue>
+	<vector>
+	<math.h>
+
+1581917447 d:\mycppworkspace\mytemplete\binarytreetraversal\binarytree.h
+	<iostream>
+	<string>
+	<vector>
+

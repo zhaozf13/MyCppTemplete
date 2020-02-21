@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1580781144 source:d:\mycppworkspace\mytemplete\graph\main.cpp
+	"MyGraph.h"
+	<queue>
+	<iostream>
+
+1580783882 source:d:\mycppworkspace\mytemplete\graph\mygraph.cpp
+	"MyGraph.h"
+
+1580783666 d:\mycppworkspace\mytemplete\graph\mygraph.h
+

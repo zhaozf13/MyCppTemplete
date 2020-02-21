@@ -1,4 +1,0 @@
-﻿  MorrisTraversal.cpp
-D:\MyCppWorkSpace\MyTemplete\MorrisTraversal\BinaryTree.h(11,27): warning C4099: “BinaryNode”: 类型名称以前使用“class”现在使用的是“struct”
-D:\MyCppWorkSpace\MyTemplete\MorrisTraversal\BinaryTree.h(8): message : 参见“BinaryNode”的声明
-  MorrisTraversal.vcxproj -> D:\MyCppWorkSpace\MyTemplete\MorrisTraversal\Debug\MorrisTraversal.exe

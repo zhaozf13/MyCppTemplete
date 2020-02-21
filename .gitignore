@@ -31,10 +31,10 @@
 *.out
 *.app
 
-/.vs
-/Debug
-/bin
-/obj
+.vs/
+Debug/
+bin/
+obj/
 *.sln
 *.vcxproj
 *.vcxproj.filters

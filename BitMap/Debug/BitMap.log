@@ -1,5 +1,0 @@
-﻿  BitMap.cpp
-D:\MyCppWorkSpace\MyTemplete\BitMap\BitMap.cpp(14,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\MyCppWorkSpace\MyTemplete\BitMap\BitMap.cpp(25,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\MyCppWorkSpace\MyTemplete\BitMap\BitMap.cpp(36,21): warning C4018: “<”: 有符号/无符号不匹配
-  BitMap.vcxproj -> D:\MyCppWorkSpace\MyTemplete\BitMap\Debug\BitMap.exe

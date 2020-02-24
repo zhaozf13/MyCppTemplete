@@ -32,9 +32,6 @@ int main()
     s.push(1);
     s.push(2);
     s.push(3);
-    //cout << getAndremoveLastElement(s);
-    //cout << getAndremoveLastElement(s);
-    //cout << getAndremoveLastElement(s);
     reverse(s);
     while(!s.empty()){
         cout << s.top() << endl;

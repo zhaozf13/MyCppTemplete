@@ -53,7 +53,7 @@ int CoinsWay2(int* arr, int len, int aim) {
     for (int i = 0; i <= len; i++) {
         delete[] dp[i];
     }
-    delete dp;
+    delete[] dp;
 
 }
 
@@ -83,7 +83,7 @@ int CoinsWay3(int* arr, int len, int aim) {
     for (int i = 0; i <= len; i++) {
         delete[] dp[i];
     }
-    delete dp;
+    delete[] dp;
 
 }
 

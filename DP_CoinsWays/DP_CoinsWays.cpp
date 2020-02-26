@@ -91,12 +91,11 @@ int CoinsWay3(int* arr, int len, int aim) {
 
 
 //for test
-int* generateRandomArr(int len, int max) {
-    srand(((int)time(0)));
-    int length = ((int)rand() % len) + 1;
-    //cout << length;
-    int* arr = new int[length];
-    for (int i = 0; i < length; i++) {
+int* generateRandomArr(int len, int max,int* p_arr_length) {
+    *p_arr_length = ((int)rand() % len) + 1;
+    //cout << *p_arr_length << endl;
+    int* arr = new int[*p_arr_length];
+    for (int i = 0; i < *p_arr_length; i++) {
         arr[i] = ((int)rand() % max) + 1;
     }
     return arr;
@@ -112,17 +111,15 @@ int main()
     srand((unsigned)time(NULL));
     for (int i = 0; i < testTime; i++) {
         //随机生成数组
-        int length = ((int)rand() % len) + 1;
-        cout << length << endl;
-        int* arr = new int[length];
-        for (int i = 0; i < length; i++) {
-            arr[i] = ((int)rand() % max) + 1;
-        }
+        int arr_length = 0;
+        int* p_arr_length = &arr_length;
+        int* arr = generateRandomArr(len, max, p_arr_length);
+        //cout << "arr_length" << arr_length << endl;
         //测试
         int aim = ((int)rand() % 10 * max) + max;
-        int res1 = CoinsWay1(arr, length, aim);
-        int res2 = CoinsWay2(arr, length, aim);
-        int res3 = CoinsWay3(arr, length, aim);
+        int res1 = CoinsWay1(arr, arr_length, aim);
+        int res2 = CoinsWay2(arr, arr_length, aim);
+        int res3 = CoinsWay3(arr, arr_length, aim);
         if (res1 != res2||res2 != res3) {
             cout << "Oooops!" << endl;
             break;

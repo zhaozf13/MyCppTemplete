@@ -3,7 +3,7 @@
 用于记录数据结构学习中算法`C++`的实现，主要学习的课程来自牛客网左程云的算法课程。该课程所有算法是`Java`编写的，故做了`C++`版本的整理和改写。在整理过程中也夹杂了一些经典问题的解法。  
   
 ***原课程链接如下：***  
-[牛客算法基础入门班](https://www.nowcoder.com/courses/semester/2020algorithm-base/"牛客算法基础入门班")  
+[牛客算法基础入门班](https://www.nowcoder.com/courses/semester/2020algorithm-base/)  
 ***********
 ***目前整理的算法包括：***  
 ### 1.位运算实现加减乘除

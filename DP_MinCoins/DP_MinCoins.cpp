@@ -91,7 +91,7 @@ int MinCoins2(int* arr, int len, int aim) {
     for (int i = 0; i < len + 1; i++) {
         delete[] dp[i];
     }
-    delete dp;
+    delete[] dp;
 }
 
 //严格表结构
@@ -134,11 +134,12 @@ int MinCoins3(int* arr, int len, int aim) {
             }
         }
     }
-    return dp[0][aim];
+    int result = dp[0][aim];
     for (int i = 0; i < len + 1; i++) {
         delete[] dp[i];
     }
-    delete dp;
+    delete[] dp;
+    return result;
 }
 
 
@@ -159,5 +160,6 @@ int main()
     else {
         cout << "Ooops!" << endl;
     }
+    return 0;
 }
 

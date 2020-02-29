@@ -48,12 +48,12 @@ int CoinsWay2(int* arr, int len, int aim) {
             dp[index][rest] = ways;
         }
     }
-    return dp[0][aim];
-
+    int result = dp[0][aim];
     for (int i = 0; i <= len; i++) {
         delete[] dp[i];
     }
     delete[] dp;
+    return result;
 
 }
 
@@ -79,12 +79,12 @@ int CoinsWay3(int* arr, int len, int aim) {
             }
         }
     }
-    return dp[0][aim];
+    int result = dp[0][aim];
     for (int i = 0; i <= len; i++) {
         delete[] dp[i];
     }
     delete[] dp;
-
+    return result;
 }
 
 
@@ -99,7 +99,6 @@ int* generateRandomArr(int len, int max,int* p_arr_length) {
         arr[i] = ((int)rand() % max) + 1;
     }
     return arr;
-    delete[] arr;
 }
 
 
@@ -124,9 +123,12 @@ int main()
             cout << "Oooops!" << endl;
             break;
         }
+        int* arr = generateRandomArr(len, max, p_arr_length);
+        delete[] arr;
     }
 
     cout << "Hooray!" << endl;
+    return 0;
 }
 
 
